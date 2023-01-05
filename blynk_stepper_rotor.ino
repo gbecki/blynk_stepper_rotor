@@ -104,7 +104,7 @@ void setup()
   Serial.begin(115200);
   Serial.print("Initialize Blynk.");
 
-  Blynk.begin(auth, ssid, pass);
+  Blynk.begin(auth, ssid, pass, "blynk.cloud", 80);
  
   stepper.setMaxSpeed(0.0); // set the max motor speed
   stepper.setAcceleration(0.0); // set the acceleration
