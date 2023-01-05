@@ -21,9 +21,14 @@
 #include <BlynkSimpleEsp8266.h>
 #include <AccelStepper.h>
 
-// You should get Auth Token in the Blynk App.
-// Go to the Project Settings (nut icon).
-char auth[] = "";
+// Template ID, Device Name and Auth Token are provided by the Blynk.Cloud
+// See the Device Info tab, or Template settings
+#define BLYNK_TEMPLATE_ID           "TMPLxxxxxx"
+#define BLYNK_DEVICE_NAME           "Device"
+#define BLYNK_AUTH_TOKEN            "YourAuthToken"
+
+
+char auth[] = BLYNK_AUTH_TOKEN;
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
